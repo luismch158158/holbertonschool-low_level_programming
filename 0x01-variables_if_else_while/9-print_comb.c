@@ -16,7 +16,6 @@ int main(void)
 
 		if (i <= '8')
 		{
-			putchar(32);
 			putchar(44);
 			putchar (32);
 		}
