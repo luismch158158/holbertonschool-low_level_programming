@@ -23,5 +23,7 @@ In this module we will practice the basic steps of C, compilation and first appr
 	- Write a C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
 
 Author: Luis Manrique (luismanrique158158@gmail.com)
+
 Linkedin: https://www.linkedin.com/in/luis-manrique158158/
+
 Twitter: https://twitter.com/LuisManriqueDev
