@@ -21,6 +21,10 @@ In this module the if, else and while statements will be practiced
 	- Write a program that prints all the numbers of base 16 in lowercase, followed by a new line. Use only the putchar function.
 9. Patience, persistence and perspiration make an unbeatable combination for success (file: 9-print_comb.c)
 	- Write a program that prints all possible combinations of single-digit numbers. Numbers must be separated by ,, followed by a space.
+10. Inventing is a combination of brains and materials. The more brains you use, the less material you need (file: 100-print_comb3.c)
+	- Write a program that prints all possible different combinations of two digits.
+11. The success combination in business is: Do what you do better... and: do more of what you do... (file: 101-print_comb4.c)
+	- Write a program that prints all possible different combinations of three digits.
 
 Author: Luis Manrique (luismanrique158158@gmail.com)
 
