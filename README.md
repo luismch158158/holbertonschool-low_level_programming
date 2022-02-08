@@ -1,2 +1,5 @@
 # LOW LEVEL PROGRAMMING
 In this repository you will se all the exercises developed in Holberton in the C language
+## PROJECTS
+- 0x00. C - Hello, World
+- 0x01. C - Variables, if, else, while
