@@ -2,7 +2,8 @@
 
 /**
  * *_strcat - funcion that concatenates two strings
- * overwriting the terminating null byte (\0), to the buffer pointed to by dest.
+ * overwriting the terminating null byte (\0),
+ * to the buffer pointed to by dest.
  * @dest : variable to pointer
  * @src : variable to pointer
  *
