@@ -22,7 +22,7 @@ char *cap_string(char *str)
 		if (l < 6)
 			separators[l] = separators_1[l];
 		else if (l >= 6 && l < 13)
-			separators[l] = separators_2[l - 7];
+			separators[l] = separators_2[l - 6];
 	}
 	while (*(str + total_1) != '\0')
 	{
