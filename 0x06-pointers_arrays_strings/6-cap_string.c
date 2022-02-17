@@ -30,6 +30,8 @@ char *cap_string(char *str)
 	}
 	for (i = 1; i <= total_1; i++)
 	{
+		if (i == total_1)
+			break;
 		for (j = 0; j < 13; j++)
 		{
 			k = separators[j] - str[i];
