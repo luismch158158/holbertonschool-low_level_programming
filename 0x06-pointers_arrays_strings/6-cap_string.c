@@ -28,7 +28,7 @@ char *cap_string(char *str)
 	{
 		total_1++;
 	}
-	for (i = 1; i <= total_1; i++)
+	for (i = 0; i <= total_1; i++)
 	{
 		if (i == total_1)
 			break;
