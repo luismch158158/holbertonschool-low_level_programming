@@ -12,23 +12,14 @@ char *cap_string(char *str)
 	int total_1 = 0;
 	int j;
 	int k;
-	int l;
-	char separators_1[6] = {' ', '\t', '\n', ',', ';', '.'};
-	char separators_2[7] = {'!', '?', '"', '(', ')', '{', '}'};
-	char separators[13];
+	char separators[13] = {' ', '\t', '\n', ',', ';', '.',
+				'!', '?', '"', '(', ')', '{', '}'};
 
-	for (l = 0; l < 13; l++)
-	{
-		if (l < 6)
-			separators[l] = separators_1[l];
-		else if (l >= 6 && l < 13)
-			separators[l] = separators_2[l - 6];
-	}
 	while (*(str + total_1) != '\0')
 	{
 		total_1++;
 	}
-	for (i = 0; i <= total_1; i++)
+	for (i = 0; i < total_1; i++)
 	{
 		if (i == total_1)
 			break;
