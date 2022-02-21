@@ -10,32 +10,20 @@
 
 char *_strchr(char *s, char c)
 {
-	int i;
-	int j = 0;
-	char new[98];
+	int i = 0;
 
-	char *new2 = new;
-
-	for (i = 0; s[i] != '\0'; i++)
+	while (*(s+i) != '\0')
 	{
 		if (s[i] == c)
 		{
-			while (s[i] != '\0')
-			{
-				new2[j] = s[i];
-				j++;
-				i++;
-			}
-		break;
+			s++;
+			return (s);
+			break;
 		}
-
+		s++;
+		i++;
 	}
 
-	if (j == 0)
-	{
-		new2 = NULL;
-	}
-
-	return (new2);
+	return (NULL);
 
 }
