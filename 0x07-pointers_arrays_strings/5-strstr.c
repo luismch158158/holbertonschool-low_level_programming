@@ -24,12 +24,17 @@ char *_strstr(char *haystack, char *needle)
 			if (*new == *haystack)
 			{
 				marker = 1;
+				haystack++;
 			}
 			if (marker == 0)
 			{
 				break;
 			}
 			new++;
+		}
+		if (marker == 1)
+		{
+			haystack--;
 		}
 		haystack++;
 	}
