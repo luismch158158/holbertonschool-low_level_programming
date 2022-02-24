@@ -12,6 +12,7 @@ int _sqrt_recursion(int n);
 int is_prime_number(int n);
 int _putchar(char c);
 int _find(int i, int j);
+int find_prime(int y, int number);
 
 
 #endif /*MAIN_H*/
