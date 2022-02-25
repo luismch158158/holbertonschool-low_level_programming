@@ -9,7 +9,8 @@
  * of things that were entered on the command line
  * when I run this program
  *
- * Return: Always 0.
+ * Return: Always 0 if the program receive two arguments
+ * otherwise return 1.
  */
 
 int main(int argc __attribute__((unused)),
