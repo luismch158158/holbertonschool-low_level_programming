@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * _strdup - funcion that pointer to a newly allocated
@@ -25,9 +26,15 @@ char *_strdup(char *str)
 
 	s = malloc((j) * sizeof(char));
 
-	if (s == NULL || *str == 0)
+	if (str == NULL)
 	{
-		return (NULL);
+		return (0);
+	
+	}
+
+	if (s == NULL)
+	{
+		return (0);
 	}
 
 	for (i = 0; i < j; i++)
