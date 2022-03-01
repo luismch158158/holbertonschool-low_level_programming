@@ -11,6 +11,7 @@ In this repository you will se all the exercises developed in Holberton in the C
 - 0x07. C - Even more pointers, arrays and strings (Arrays 2d and pointer to pointers)
 - 0x08. C - Recursion
 - 0x0A. C - argc, argv
+- 0x0B. C - malloc, free
 
 
 Author: Luis Manrique (luismanrique158158@gmail.com)
