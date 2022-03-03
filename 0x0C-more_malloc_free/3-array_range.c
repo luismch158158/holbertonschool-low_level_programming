@@ -3,8 +3,8 @@
 
 /**
  * array_range - funcion that creates an array of integers
- * @min: value min
- * @max: value max
+ * @min: first number
+ * @max: last number
  *
  * Return: pointer to array of integers
  */
@@ -15,8 +15,8 @@ int *array_range(int min, int max)
 
 	if (min > max)
 		return (NULL);
-	if (min - max < 0)
-		j = (min - max) * -1;
+	if (max - min < 0)
+		j = (max - min) * -1;
 	else
 		j = max - min;
 
