@@ -11,12 +11,12 @@
 int *array_range(int min, int max)
 {
 	int *s;
-	int i, j;
+	unsigned int i, j;
 
 	if (min > max)
 		return (NULL);
-	if (max - min < 0)
-		j = (max - min) * -1;
+	if (min - max < 0)
+		j = (min - max) * -1;
 	else
 		j = max - min;
 
@@ -29,7 +29,7 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
-	for (i = 0; i <= max; i++)
+	for (i = 0; i <= j; i++)
 	{
 		s[i] = min + i;
 	}
