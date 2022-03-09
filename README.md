@@ -15,6 +15,7 @@ In this repository you will se all the exercises developed in Holberton in the C
 - 0x0C. C - More malloc, free
 - 0x0D. C - Preprocessor
 - 0x0E. C - Structures, typedef
+- 0x0F. C - Function pointers
 
 
 Author: Luis Manrique (luismanrique158158@gmail.com)
