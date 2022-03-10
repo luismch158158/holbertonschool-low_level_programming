@@ -16,6 +16,7 @@ In this repository you will se all the exercises developed in Holberton in the C
 - 0x0D. C - Preprocessor
 - 0x0E. C - Structures, typedef
 - 0x0F. C - Function pointers
+- 0x10. C - Variadic functions
 
 
 Author: Luis Manrique (luismanrique158158@gmail.com)
