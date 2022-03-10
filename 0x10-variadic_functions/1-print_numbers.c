@@ -2,7 +2,8 @@
 #include <stdarg.h>
 
 /**
- * print_numbers - Function that sum of all it parameters
+ * print_numbers - Function that print numbers, followed by
+ * a new line
  * @separator: string to be printed between numbers
  * @n: numbers of parameters to passing
  * @...: parameters to passing in compilation
