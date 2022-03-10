@@ -14,12 +14,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	char *tmp;
 
-	if (separator == NULL)
-	{
-		printf("\n");
-		return;
-	}
-
 	if (n == 0)
 	{
 		printf("\n");
@@ -44,7 +38,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("(nil)");
 		else
 			printf("%s", tmp);
-		printf("%s", separator);
+		if (separator)
+			printf("%s", separator);
 	}
 
 	va_end(str);
