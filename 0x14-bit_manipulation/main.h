@@ -11,6 +11,8 @@ int get_bit(unsigned long int n, unsigned int index);
 int set_bit(unsigned long int *n, unsigned int index);
 int clear_bit(unsigned long int *n, unsigned int index);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
+int _strlen(const char *s);
+int _pow_recursion(int x, int y);
 
 
 #endif /*MAIN_H*/
