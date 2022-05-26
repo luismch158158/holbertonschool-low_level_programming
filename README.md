@@ -24,6 +24,7 @@ In this repository you will se all the exercises developed in Holberton in the C
 - 0x15. C - File I/O
 - 0x17. C - Doubly linked lists
 - 0x18. C - Dynamic libraries
+- 0x1A. C - Hash tables
 
 
 Author: Luis Manrique (luismanrique158158@gmail.com)
