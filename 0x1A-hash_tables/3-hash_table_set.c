@@ -1,0 +1,55 @@
+#include "hash_tables.h"
+
+/**
+ * hash_table_set - function that adds an element to the hash table
+ *
+ * @ht: is the hash table you want to add or update the key/value to
+ * @key: is the key. key can not be an empty string
+ * value:  is the value associated with the key.
+ * Value must be duplicated.
+ * @value: can be an empty string
+ *
+ * Return: 1 if it succeeded, 0 otherwise
+ */
+
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
+{
+	int exited = 0;
+	unsigned long int index = 0;
+	hash_node_t *node = NULL, *add_node = NULL, *tmp = NULL;
+
+	if (key == NULL || ht == NULL)
+		return (exited);
+
+	index = key_index((unsigned char *)key, ht->size);
+	node = ht->array[index];
+
+	/*Cuando no existe el nodo, lo crea y le asigna valores*/
+	if (!(node))
+	{
+		node = malloc(sizeof(hash_node_t));
+		if (!node)
+			return (0);
+		node->key = strdup(key);
+		node->value = strdup(value);
+		node->next = NULL;
+		ht->array[index] = node;
+		return (1);
+	}
+	/*Colision especial busca en toda la linked list y sobrescribe (update)*/
+	for (tmp = node; tmp; tmp = tmp->next)
+		if (strcmp(tmp->key, key) == 0)
+		{
+			free(tmp->value), tmp->value = strdup(value);
+			return (1);
+		}
+	/*No encontro match en la linked list (colision normal)*/
+       /* Ese nuevo nodo se convierte en el head de la linked list*/
+	add_node = malloc(sizeof(hash_node_t));
+	if (!(add_node))
+		return (0);
+	add_node->key = strdup(key), add_node->value = strdup(value);
+	add_node->next = node;
+	ht->array[index] = add_node;
+	return (1);
+}
