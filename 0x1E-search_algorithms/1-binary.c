@@ -36,21 +36,24 @@ int binary_search(int *array, size_t size, int value)
 {
 	size_t idx = 0, high = size - 1, low = 0;
 
-	do {
-		printer_array(array, low, high);
-		idx = ((high - low) / 2) + low;
+	if (array != NULL && size > 0)
+	{
 
-		if (array[idx] == value)
-			return (value);
+		do {
+			printer_array(array, low, high);
+			idx = ((high - low) / 2) + low;
 
-		if (low == high)
-			break;
+			if (array[idx] == value)
+				return (value);
 
-		if (array[idx] < value)
-			low = idx + 1;
-		else
-			high = idx - 1;
-	} while (array[idx] != value);
+			if (low == high)
+				break;
 
+			if (array[idx] < value)
+				low = idx + 1;
+			else
+				high = idx - 1;
+		} while (array[idx] != value);
+	}
 	return (-1);
 }
